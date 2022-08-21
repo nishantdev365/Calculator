@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="calc-skin">
+    <input type="text" placeholder="Result" id="result" readonly>
+    <br>
+    <div class="row-1">
+      <input type="button" value="(" class="btn" onclick="liveScreen('(')">
+      <input type="button" value=")" class="btn" onclick="liveScreen(')')">
+      <input type="button" value="%" class="btn" onclick="liveScreen('%')">
+      <input type="button" value="AC" class="btn" onclick="liveScreen(result.value='')" style="background-color: #4a90e2;">
+    </div>
+    <div class="row-2">
+      <input type="button" value="1" class="btn" onclick="liveScreen(1)">
+      <input type="button" value="2" class="btn" onclick="liveScreen(2)">
+      <input type="button" value="3" class="btn" onclick="liveScreen(3)">
+      <input type="button" value="-" class="btn" onclick="liveScreen('-')">
+    </div>
+    <div class="row-3">
+      <input type="button" value="4" class="btn" onclick="liveScreen(4)">
+      <input type="button" value="5" class="btn" onclick="liveScreen(5)">
+      <input type="button" value="6" class="btn" onclick="liveScreen(6)">
+      <input type="button" value="X" class="btn" onclick="liveScreen('*')">
+    </div>
+    <div class="row-4">
+      <input type="button" value="7" class="btn" onclick="liveScreen(7)">
+      <input type="button" value="8" class="btn" onclick="liveScreen(8)">
+      <input type="button" value="9" class="btn" onclick="liveScreen(9)">
+      <input type="button" value="/" class="btn" onclick="liveScreen('/')">
+    </div>
+    <div class="row-5">
+      <input type="button" value="0" class="btn" onclick="liveScreen(0)">
+      <input type="button" value="." class="btn" onclick="liveScreen('.')">
+      <input type="button" value="=" class="btn" onclick="calculate(result.value)" style="background-color:  #f5a623;">
+      <input type="button" value="+" class="btn" onclick="liveScreen('+')">
+    </div>
+    <p>Made With <span>❤</span> By Nishant Kumar</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
